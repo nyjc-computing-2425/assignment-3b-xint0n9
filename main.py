@@ -1,3 +1,4 @@
 stdform = input('Enter a number in scientific notation: ')
 stdform = stdform.strip()
-print('This number in E notation is', stdform.replace('x10^','E')+'.')
+m, e = stdform.split('x10^')
+print('This number in E notation is', m+'E'+e+'.')
